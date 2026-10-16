@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/holepunchto/bare-x11-xtest#readme",
   "dependencies": {
-    "bare-x11": "^0.0.0"
+    "bare-x11": "^0.1.0"
   },
   "devDependencies": {
     "brittle": "^3.18.0",
