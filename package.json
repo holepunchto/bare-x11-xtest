@@ -1,0 +1,46 @@
+{
+  "name": "bare-x11-xtest",
+  "version": "0.0.0",
+  "description": "XTest bindings for Bare, to fake X11 input in tests",
+  "exports": {
+    "./package": "./package.json",
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "binding.c",
+    "binding.js",
+    "CMakeLists.txt",
+    "prebuilds"
+  ],
+  "addon": true,
+  "scripts": {
+    "format": "prettier --write . && lunte --fix",
+    "lint": "prettier --check . && lunte",
+    "test": "brittle-bare --coverage test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/bare-x11-xtest.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/bare-x11-xtest/issues"
+  },
+  "homepage": "https://github.com/holepunchto/bare-x11-xtest#readme",
+  "dependencies": {
+    "bare-x11": "^0.0.0"
+  },
+  "devDependencies": {
+    "brittle": "^3.18.0",
+    "cmake-bare": "^1.6.5",
+    "lunte": "^1.8.0",
+    "prettier": "^3.4.1",
+    "prettier-config-holepunch": "^2.0.0"
+  }
+}
